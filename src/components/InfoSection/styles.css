@@ -1,0 +1,27 @@
+.infoSectionTextContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 82px;
+}
+
+.infoSectionTextContainerReverse {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0 82px;
+}
+
+.infoSectionText {
+  width: 70%;
+}
+
+.infoSectionImage {
+  width: 25%;
+}
+
+.infoButtonContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 42px 0;
+}

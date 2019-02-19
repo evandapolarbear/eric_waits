@@ -1,0 +1,13 @@
+.phoneButton {
+  border: 2px solid #1ab8c7;
+  color: #1ab8c7;
+  border-radius: 22px;
+  padding: 22px;
+  width: 116px;
+  align-content: center;
+}
+
+.phoneButton:hover {
+  background-color: #1ab8c7;
+  color: #fff;
+}

@@ -1,0 +1,11 @@
+.linkDivs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+}
+
+.internalLink:hover {
+  color: #1ab8c7;
+  cursor: pointer;
+}
