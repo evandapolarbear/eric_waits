@@ -5,7 +5,18 @@
   width: 35%;
 }
 
+.internalLink {
+  text-decoration: none;
+}
+
 .internalLink:hover {
   color: #1ab8c7;
   cursor: pointer;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
 }

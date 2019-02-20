@@ -1,17 +1,18 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './styles.css';
 
-export default ({ children }) => (
-  <Fragment>
+export default ({ children, headers, title, subTitleOne, subTitleTwo }) => (
+  <div className='headerContainer'>
     <div>
-      <h1>DR. Eric Waits</h1>
-      <h3>DMD</h3>
+      <div>{ title }</div>
+      <div>{ subTitleOne }</div>
+      <div>{ subTitleTwo }</div>
     </div>
     <div className='linkDivs'>
-      <a href='#infoOne' className='internalLink'>Implants</a>
-      <a href='#infoTwo' className='internalLink'>Cosmetics</a>
-      <a href='#infoThree' className='internalLink'>General</a>
+      {headers.map((text, idx) =>
+        <a href={`#info${idx + 1}`} className='internalLink'>{ text }</a>
+      )}
       { children }
     </div>
-  </Fragment>
+  </div>
 )
