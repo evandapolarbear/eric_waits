@@ -19,6 +19,7 @@ class App extends React.Component {
       cosmeticInfo,
       generalInfo,
       google,
+      googleUrl,
       headerTexts,
       implantInfo,
       mapUrl,
@@ -27,6 +28,7 @@ class App extends React.Component {
       subTitleTwo,
       title,
       yelp,
+      yelpUrl,
     } = texts;
 
     return (
@@ -85,7 +87,17 @@ class App extends React.Component {
             <PhoneButton/>
           </LocationSection>
         }
-        rateFooter={ <RateFooter {...{ rateUs, yelp, google }}/>}
+        rateFooter={
+          <RateFooter
+            {...{
+              rateUs,
+              yelp,
+              google,
+              googleUrl,
+              yelpUrl
+            }}
+          />
+        }
       />
     );
   }

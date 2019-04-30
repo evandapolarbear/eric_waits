@@ -24,3 +24,19 @@
 .footerRateButton:hover {
   cursor: pointer
 }
+
+.footerLinkTag {
+  text-decoration: none;
+}
+
+.footerLinkTag:visited {
+  color: white;
+}
+
+.footerLinkTag:hover {
+  color: white;
+}
+
+.footerLinkTag:active {
+  color:white;
+}

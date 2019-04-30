@@ -11,6 +11,8 @@ const rateUs = 'Rate Us On:';
 const yelp = 'Yelp';
 const google = 'Google';
 const mapUrl = 'https://www.google.com/maps/place/Dr.+Eric+R.+Waits,+DMD/@40.5862974,-122.4042389,17z/data=!3m1!4b1!4m5!3m4!1s0x54d2ed1b5f04a691:0xa4b0c95ab0f02a64!8m2!3d40.5862933!4d-122.4020449'
+const yelpUrl = 'https://www.yelp.com/biz/waits-eric-r-dmd-redding'
+const googleUrl = 'https://www.google.com/search?hl=en-US&gl=us&q=Dr.+Eric+R.+Waits,+DMD,+2115+Eureka+Way,+Redding,+CA+96001&ludocid=11867206409474026084&lsig=AB86z5VxbTNqTHH8edlxRSOk1Rkc#lrd=0x54d2ed1b5f04a691:0xa4b0c95ab0f02a64,3,,,'
 
 export default {
   aboutTitle,
@@ -18,6 +20,7 @@ export default {
   cosmeticInfo,
   generalInfo,
   google,
+  googleUrl,
   headerTexts,
   implantInfo,
   mapUrl,
@@ -26,4 +29,5 @@ export default {
   subTitleTwo,
   title,
   yelp,
+  yelpUrl,
 };
