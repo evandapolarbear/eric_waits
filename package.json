@@ -4,15 +4,15 @@
   "private": true,
   "homepage": "https://evandapolarbear.gitub.io/eric_waits",
   "dependencies": {
-    "gh-pages": "^1.0.0",
     "class-names": "^1.0.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
