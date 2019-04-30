@@ -1,7 +1,8 @@
 import React from 'react';
+import './styles.css';
 
 export default () => (
-  <div>
-    <h1>BANNER PLACE HOLDER</h1>
+  <div className='bannerImgContainer'>
+    <div className='bannerImg'></div>
   </div>
 )

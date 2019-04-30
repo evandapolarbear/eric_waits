@@ -1,28 +1,32 @@
 import React from 'react';
 
-import Layout from './components/Layout/';
-import Header from './components/Header/';
-import Banner from './components/Banner/';
-import PhoneButton from './components/PhoneButton/';
-import InfoSection from './components/InfoSection/';
 import About from './components/About/';
+import Banner from './components/Banner/';
+import Header from './components/Header/';
+import InfoSection from './components/InfoSection/';
+import Layout from './components/Layout/';
+import LocationSection from './components/Location/';
+import PhoneButton from './components/PhoneButton/';
+import RateFooter from './components/RateFooter/';
 
 import texts from './constants';
-
-// import logo from './logo.svg';
 
 class App extends React.Component {
   render() {
     const {
+      aboutTitle,
       centralText,
       cosmeticInfo,
       generalInfo,
+      google,
       headerTexts,
       implantInfo,
-      loremText,
+      mapUrl,
+      rateUs,
       subTitleOne,
       subTitleTwo,
       title,
+      yelp,
     } = texts;
 
     return (
@@ -39,12 +43,12 @@ class App extends React.Component {
             <PhoneButton/>
           </Header>
         }
-        banner={ <Banner/> }
+        banner={ <Banner /> }
         firstInfo={
           <InfoSection
+            sectionNum={1}
             infoTitle='Implants'
             text={implantInfo}
-            image={loremText}
           >
             <PhoneButton/>
           </InfoSection>
@@ -52,23 +56,36 @@ class App extends React.Component {
         secondInfo={
           <InfoSection
             reverse={true}
-            infoTitle='Cosmetic'
+            sectionNum={2}
+            infoTitle='Cosmetic Dentistry'
             text={cosmeticInfo}
-            image={loremText}
           >
             <PhoneButton/>
           </InfoSection>
         }
         thirdInfo={
           <InfoSection
-            infoTitle='General'
+            sectionNum={3}
+            infoTitle='General Dentistry'
             text={generalInfo}
-            image={loremText}
           >
             <PhoneButton/>
           </InfoSection>
         }
-        fourthInfo={ <About {...{ centralText }} /> }
+        fourthInfo={ <About {...{ centralText, title: aboutTitle }} /> }
+        fifthInfo={
+          <LocationSection
+            {...{
+              mapUrl,
+              subTitleOne,
+              subTitleTwo,
+              title,
+            }}
+          >
+            <PhoneButton/>
+          </LocationSection>
+        }
+        rateFooter={ <RateFooter {...{ rateUs, yelp, google }}/>}
       />
     );
   }

@@ -11,3 +11,7 @@
   background-color: #1ab8c7;
   color: #fff;
 }
+
+.phoneButtonNoUnderline {
+  text-decoration: none;
+}

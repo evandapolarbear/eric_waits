@@ -1,13 +1,11 @@
 import React from 'react';
 import './styles.css';
 
-export default ({ centralText }) => (
+export default ({ centralText, title }) => (
   <div className='aboutContainer'>
-    <div className='imagePlaceHolder'>
-      <h1>HEAD SHOT</h1>
-      <h1>PLACEHOLDER</h1>
-    </div>
+    <div className='headShotImg' />
     <div className='aboutText'>
+      <h2> { title }</h2>
       <h3>{ centralText }</h3>
     </div>
   </div>

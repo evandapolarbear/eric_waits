@@ -1,0 +1,26 @@
+.rateFooterContainer {
+  color: white;
+  padding: 16px 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+}
+
+.rateFooterButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.footerRateButton {
+  border: white solid 2px;
+  border-radius: 6px;
+  padding: 0 16px;
+}
+
+.footerRateButton:hover {
+  cursor: pointer
+}

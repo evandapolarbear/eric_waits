@@ -1,27 +1,42 @@
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .infoSectionTextContainer {
   display: flex;
   justify-content: space-between;
-  padding: 0 102px;
-}
-
-.infoSectionTextContainerReverse {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  padding: 0 102px;
+  padding: 0 182px;
 }
 
 .infoSectionText {
-  width: 70%;
+  width: 60%;
 }
 
 .infoSectionImage {
-  width: 25%;
+  width: 30%;
+  height: 30vw;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .infoButtonContainer {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 42px 0;
+  margin: 102px 0;
+}
+
+.imgOne {
+  background-image: url('./../../imgs/imgOne.jpg');
+}
+
+.imgTwo {
+  background-image: url('./../../imgs/imgTwo.jpg');
+}
+
+.imgThree {
+  background-image: url('./../../imgs/imgThree.jpg');
 }
