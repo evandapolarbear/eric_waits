@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 35%;
+  width: 44%;
 }
 
 .internalLink {
@@ -15,9 +15,25 @@
 }
 
 .headerContainer {
+  height: 54px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 32px;
   line-height: 18px;
+}
+
+.headerAdress > div {
+  padding-top: 4px
+}
+
+@media all and (max-width: 600px) {
+  .linkDivs {
+    display: none;
+  }
+
+  .headerContainer {
+    display:flex;
+    justify-content: center;
+  }
 }
