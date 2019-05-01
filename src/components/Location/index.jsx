@@ -13,7 +13,7 @@ export default ({ children, title, subTitleOne, subTitleTwo, mapUrl }) => (
             <div className='mapImg'/>
         </a>
       </div>
-      <div>
+      <div className='locationTexts'>
         <h1>{ title }</h1>
         <h2>{ subTitleOne }</h2>
         <h2>{ subTitleTwo }</h2>

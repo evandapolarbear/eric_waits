@@ -40,3 +40,27 @@
 .imgThree {
   background-image: url('./../../imgs/imgThree.jpg');
 }
+
+@media all and (max-width: 600px) {
+  .infoSectionTextContainer {
+    display:flex;
+    flex-direction: column-reverse;
+    padding: 5vw;
+  }
+
+  .infoSectionImage {
+    width: 90vw;
+  }
+
+  .infoSectionText {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoSectionText h3 {
+    text-align: center;
+  }
+}

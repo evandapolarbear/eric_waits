@@ -48,5 +48,28 @@
   width: 300px;
 
   border-radius: 100%;
-  /* transform: scale(6.5) */
+}
+
+@media all and (max-width: 600px) {
+  .locationContainer {
+    min-width: 100vw;
+    border-top: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+  }
+
+  .locationTexts {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .locationContainer {
+    padding: 0;
+    overflow: hidden;
+  }
 }
