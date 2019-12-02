@@ -1,0 +1,3 @@
+# robots.txt for waitsfamilydentistry.com
+
+User-agent: *
